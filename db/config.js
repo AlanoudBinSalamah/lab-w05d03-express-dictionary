@@ -6,7 +6,8 @@ var config = {
   host: 'localhost',
   port: 5432,
   database: 'express_terms',
-  user: 'jackie' // your username here!!
+  user: 'postgres', // your username here!!
+  password: 0000
 }
 
 var connection = pgInstance(config);

@@ -25,6 +25,12 @@ app.use(methodOverride('_method'));
 var termsController = require('./controllers/termsController');
 app.use(termsController);
 
+//set-up home route
+app.get('/', function(req,res){
+
+ res.render('./index');
+})
+
 app.listen(port, function(){
   console.log('---------------------------------------');
   console.log('Express listening on localhost:' + port);
